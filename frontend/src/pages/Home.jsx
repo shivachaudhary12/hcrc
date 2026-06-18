@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FiCalendar, FiArrowRight, FiShield, FiUsers, FiAward, FiPhoneCall } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import AboutPreview from '../components/about/AboutPreview';
 
 const Home = () => {
   // Animation variants
@@ -359,6 +360,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <AboutPreview />
 
       <style>{`
         .learn-more-link:hover .arrow-icon {

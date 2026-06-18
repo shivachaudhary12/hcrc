@@ -16,7 +16,7 @@ const Footer = () => {
           <h4 style={{ color: 'var(--color-text-white)' }} className="mb-3">Quick Links</h4>
           <ul style={{ listStyle: 'none', padding: 0 }} className="flex flex-col gap-2">
             <li><Link style={{ color: 'var(--color-text-light)' }} to="/">Home</Link></li>
-            <li><Link style={{ color: 'var(--color-text-light)' }} to="/about">About Us</Link></li>
+            <li><Link style={{ color: 'var(--color-text-light)' }} to="/about-us">About Us</Link></li>
             <li><Link style={{ color: 'var(--color-text-light)' }} to="/services">Services</Link></li>
             <li><Link style={{ color: 'var(--color-text-light)' }} to="/contact">Contact</Link></li>
           </ul>

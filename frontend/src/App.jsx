@@ -4,13 +4,14 @@ import MainLayout from './layout/MainLayout';
 import Home from './pages/Home';
 import ServicesOverview from './pages/ServicesOverview';
 import ServicePage from './pages/ServicePage';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<div className="container section-padding text-center"><h2>About Us</h2><p>Coming Soon</p></div>} />
+        <Route path="about-us" element={<AboutUs />} />
         <Route path="specialities" element={<div className="container section-padding text-center"><h2>Our Specialities</h2><p>Coming Soon</p></div>} />
         
         {/* Dynamic Services Routes */}

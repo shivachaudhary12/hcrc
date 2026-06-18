@@ -1,8 +1,9 @@
 export const aboutPreview = {
   badge: "About HCRC Hospital",
   heading: "Compassionate Healthcare, Modern Medical Support",
-  subheading: "HCRC Hospital is committed to providing safe, reliable, and patient-focused healthcare through experienced medical professionals, modern facilities, and compassionate service.",
-  paragraph: "At HCRC Hospital, we believe every patient deserves clear guidance, respectful care, and timely medical support. Our team works together to provide diagnosis, treatment, emergency support, inpatient care, and specialist services in a clean and caring environment.",
+  subheading: "HCRC Hospital began its journey with a strong commitment to patient-first healthcare, compassionate service and dependable medical support.",
+  paragraph1: "Since its beginning, HCRC Hospital has focused on providing respectful communication, timely care, diagnostic support, emergency assistance, inpatient services and specialist care in a clean and caring environment.",
+  paragraph2: "Our journey is guided by one simple promise: to listen, care, explain and support every patient with respect and responsibility. As the hospital continues to grow, HCRC Hospital remains focused on safe care, ethical medical practice, modern facilities and community trust.",
   primaryCTA: "Learn More About Us",
   secondaryCTA: "Book Appointment",
   trustPoints: [

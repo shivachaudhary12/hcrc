@@ -6,12 +6,12 @@ import '../../styles/about.css';
 
 const WhyChooseHCRC = () => {
   const chooseIcons = [
-    <FiHeart size={20} />,
+    <FiCheckSquare size={20} />,
     <FiUsers size={20} />,
     <FiLayers size={20} />,
     <FiActivity size={20} />,
     <FiShield size={20} />,
-    <FiCheckSquare size={20} />
+    <FiHeart size={20} />
   ];
 
   return (
@@ -21,7 +21,7 @@ const WhyChooseHCRC = () => {
           Why Choose HCRC Hospital
         </h2>
         <p style={{ color: '#4B5563', maxWidth: '650px', margin: '0 auto 3.5rem auto' }}>
-          We focus on clear communication, coordinated care, and a safe hospital environment to support patients and families through every step of their healthcare journey.
+          We focus on clear communication, coordinated care and a safe hospital environment to support patients and families through every step of their healthcare journey.
         </p>
 
         <div className="grid grid-cols-3 gap-6">
@@ -34,7 +34,7 @@ const WhyChooseHCRC = () => {
               transition={{ duration: 0.4, delay: index * 0.08 }}
               whileHover={{ y: -5 }}
               className="card"
-              style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', height: '100%' }}
+              style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', height: '100%', borderRadius: '20px', padding: '2.5rem' }}
             >
               <div style={{
                 width: '42px',

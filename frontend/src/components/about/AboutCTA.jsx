@@ -22,16 +22,19 @@ const AboutCTA = () => {
             Our healthcare team is ready to support you with safe, reliable and compassionate care.
           </p>
           
-          <div className="flex gap-4 justify-center" style={{ display: 'flex', flexWrap: 'wrap', width: '100%' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', width: '100%' }}>
             <Link 
-              to="/appointment" 
+              to="/contact" 
               className="btn btn-primary btn-round focus-ring" 
               style={{ 
                 backgroundColor: '#FFFFFF',
                 color: '#0B4F9F',
                 padding: '0.9rem 2rem', 
                 fontSize: '1rem',
-                boxShadow: '0 4px 14px rgba(255, 255, 255, 0.15)'
+                boxShadow: '0 4px 14px rgba(255, 255, 255, 0.15)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem'
               }}
             >
               <FiCalendar size={18} />
@@ -42,7 +45,10 @@ const AboutCTA = () => {
               className="btn btn-outline-white btn-round focus-ring" 
               style={{ 
                 padding: '0.9rem 2rem', 
-                fontSize: '1rem'
+                fontSize: '1rem',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem'
               }}
             >
               <span>View Services</span>
@@ -56,7 +62,10 @@ const AboutCTA = () => {
                 color: '#FFFFFF', 
                 border: '1px solid rgba(255, 255, 255, 0.2)',
                 padding: '0.9rem 2rem', 
-                fontSize: '1rem'
+                fontSize: '1rem',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem'
               }}
             >
               <FiPhoneCall size={18} />

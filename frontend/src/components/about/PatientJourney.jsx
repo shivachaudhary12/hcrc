@@ -52,10 +52,10 @@ const PatientJourney = () => {
                   fontFamily: 'var(--font-headings)',
                   marginTop: '0.5rem'
                 }}>
-                  <span style={{ color: '#0B4F9F' }}>{stepsIcons[index]}</span>
+                  <span style={{ color: '#0B4F9F', display: 'inline-flex', alignItems: 'center' }}>{stepsIcons[index]}</span>
                   <span>{step.title}</span>
                 </div>
-                <p style={{ fontSize: '0.8rem', color: '#4B5563', maxWidth: '160px', marginTop: '0.25rem', lineHeight: 1.4 }}>
+                <p style={{ fontSize: '0.825rem', color: '#4B5563', maxWidth: '170px', marginTop: '0.25rem', lineHeight: 1.45 }}>
                   {step.desc}
                 </p>
               </div>

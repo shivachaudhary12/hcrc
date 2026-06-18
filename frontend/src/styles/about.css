@@ -378,3 +378,22 @@
     justify-content: center;
   }
 }
+
+/* Keyboard Accessible Focus States */
+.focus-ring:focus-visible {
+  outline: 3px solid rgba(11, 79, 159, 0.55) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 3px rgba(11, 79, 159, 0.25) !important;
+}
+
+.faq-trigger:focus-visible {
+  outline: 2px solid #0B4F9F !important;
+  outline-offset: -2px !important;
+  background-color: rgba(11, 79, 159, 0.04) !important;
+}
+
+.learn-more-link:focus-visible {
+  outline: 2px solid #0B4F9F !important;
+  outline-offset: 3px !important;
+  border-radius: 4px !important;
+}

@@ -1,22 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowRight, FiLayers } from 'react-icons/fi';
+import { FiArrowRight, FiActivity, FiPlusCircle, FiAlertTriangle, FiHome, FiShield } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import { facilitiesSnapshot } from '../../data/aboutData';
 import '../../styles/about.css';
 
 const FacilitiesSnapshot = () => {
+  const facilityIcons = [
+    <FiActivity size={18} />,
+    <FiPlusCircle size={18} />,
+    <FiAlertTriangle size={18} />,
+    <FiHome size={18} />,
+    <FiShield size={18} />
+  ];
+
   return (
     <section className="section-padding" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container text-center">
         <h2 style={{ fontSize: '2rem', color: '#1F2937', fontWeight: 800, marginBottom: '1rem', fontFamily: 'var(--font-headings)' }}>
-          Facilities & Services at a Glance
+          Facilities and Services at a Glance
         </h2>
         <p style={{ color: '#4B5563', maxWidth: '600px', margin: '0 auto 3.5rem auto' }}>
           HCRC Hospital brings together essential healthcare services to support diagnosis, treatment, recovery and patient care.
         </p>
 
-        <div className="grid grid-cols-3 gap-6" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
           {facilitiesSnapshot.map((fc, index) => (
             <motion.div
               key={index}
@@ -26,7 +34,7 @@ const FacilitiesSnapshot = () => {
               transition={{ duration: 0.4, delay: index * 0.08 }}
               whileHover={{ y: -5 }}
               className="card"
-              style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}
+              style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%', borderRadius: '20px', padding: '2rem' }}
             >
               <div>
                 <div style={{
@@ -40,7 +48,7 @@ const FacilitiesSnapshot = () => {
                   justifyContent: 'center',
                   marginBottom: '1rem'
                 }}>
-                  <FiLayers size={18} />
+                  {facilityIcons[index] || <FiActivity size={18} />}
                 </div>
                 <h3 style={{ fontSize: '1.15rem', color: '#1F2937', fontWeight: 700, marginBottom: '0.5rem', fontFamily: 'var(--font-headings)' }}>
                   {fc.title}

@@ -44,8 +44,11 @@ const AboutFAQ = () => {
               <div 
                 key={index} 
                 className="faq-item"
+                style={{ borderRadius: '12px', overflow: 'hidden' }}
               >
                 <button
+                  id={`faq-trigger-${index}`}
+                  aria-controls={`faq-content-${index}`}
                   onClick={() => toggleFaq(index)}
                   aria-expanded={isOpen}
                   style={{
@@ -61,17 +64,21 @@ const AboutFAQ = () => {
                     fontWeight: 600,
                     color: '#1F2937',
                     fontSize: '1.05rem',
-                    fontFamily: 'var(--font-headings)'
+                    fontFamily: 'var(--font-headings)',
+                    transition: 'background-color 0.2s'
                   }}
-                  className="focus-ring"
+                  className="faq-trigger focus-ring"
                 >
                   <span>{faq.q}</span>
-                  {isOpen ? <FiChevronUp size={20} /> : <FiChevronDown size={20} />}
+                  {isOpen ? <FiChevronUp size={20} style={{ color: '#0B4F9F' }} /> : <FiChevronDown size={20} style={{ color: '#4B5563' }} />}
                 </button>
                 
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
+                      id={`faq-content-${index}`}
+                      role="region"
+                      aria-labelledby={`faq-trigger-${index}`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}

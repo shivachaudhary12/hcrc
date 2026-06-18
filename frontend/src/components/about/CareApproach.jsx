@@ -11,6 +11,12 @@ const CareApproach = () => {
     <FiGlobe size={20} />
   ];
 
+  const subsections = [
+    careApproach.safety,
+    careApproach.quality,
+    careApproach.community
+  ];
+
   return (
     <section className="section-padding" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container">
@@ -28,7 +34,7 @@ const CareApproach = () => {
               {careApproach.heading}
             </h2>
             <p style={{ color: '#4B5563', lineHeight: 1.75, fontSize: '1.025rem' }}>
-              {careApproach.paragraph}
+              {careApproach.intro}
             </p>
           </motion.div>
 
@@ -40,7 +46,7 @@ const CareApproach = () => {
             transition={{ duration: 0.5 }}
             style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}
           >
-            {careApproach.subsections.map((sub, index) => (
+            {subsections.map((sub, index) => (
               <div 
                 key={index} 
                 className="card"
@@ -49,7 +55,8 @@ const CareApproach = () => {
                   display: 'flex', 
                   alignItems: 'flex-start', 
                   gap: '1rem',
-                  textAlign: 'left'
+                  textAlign: 'left',
+                  borderRadius: '20px'
                 }}
               >
                 <div style={{

@@ -29,16 +29,16 @@ const AboutHero = () => {
               {aboutHero.subheading}
             </p>
 
-            <div className="flex flex-wrap gap-3" style={{ display: 'flex', flexWrap: 'wrap' }}>
-              <Link to="/appointment" className="btn btn-primary btn-round focus-ring" style={{ backgroundColor: '#FFFFFF', color: '#0B4F9F', boxShadow: 'var(--shadow-md)' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+              <Link to="/contact" className="btn btn-primary btn-round focus-ring" style={{ backgroundColor: '#FFFFFF', color: '#0B4F9F', boxShadow: 'var(--shadow-md)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                 <FiCalendar size={16} />
                 <span>{aboutHero.primaryCTA}</span>
               </Link>
-              <Link to="/services" className="btn btn-outline-white btn-round focus-ring">
+              <Link to="/services" className="btn btn-outline-white btn-round focus-ring" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                 <span>{aboutHero.secondaryCTA}</span>
                 <FiArrowRight size={16} />
               </Link>
-              <Link to="/contact" className="btn btn-round focus-ring" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#FFFFFF', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
+              <Link to="/contact" className="btn btn-round focus-ring" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#FFFFFF', border: '1px solid rgba(255, 255, 255, 0.2)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                 <FiInfo size={16} />
                 <span>{aboutHero.tertiaryCTA}</span>
               </Link>

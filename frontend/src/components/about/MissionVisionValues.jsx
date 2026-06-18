@@ -42,7 +42,7 @@ const MissionVisionValues = () => {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               whileHover={{ y: -5 }}
               className="card"
-              style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', height: '100%' }}
+              style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', height: '100%', borderRadius: '20px', padding: '2.5rem' }}
             >
               <div style={{
                 width: '48px',

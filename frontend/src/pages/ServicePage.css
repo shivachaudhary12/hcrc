@@ -1,0 +1,275 @@
+.hcrc-service-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f9fc;
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+.hcrc-service-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.hcrc-service-hero {
+  padding: 120px 0 85px;
+  background: linear-gradient(135deg, #083b78 0%, #0b4f9f 55%, #0b72c9 100%);
+  color: #ffffff;
+}
+
+.hcrc-service-hero-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.hcrc-service-eyebrow {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #dbeafe;
+  margin-bottom: 14px;
+}
+
+.hcrc-service-hero h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.08;
+  margin: 0 0 18px;
+  color: #ffffff;
+}
+
+.hcrc-service-subtitle {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 700px;
+  color: #eaf3ff;
+  margin: 0;
+}
+
+.hcrc-service-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.hcrc-btn {
+  border: 0;
+  outline: 0;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.hcrc-btn-primary {
+  background: #ffffff;
+  color: #0b4f9f;
+}
+
+.hcrc-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.22);
+}
+
+.hcrc-btn-emergency {
+  background: #ed2024;
+  color: #ffffff;
+}
+
+.hcrc-btn-emergency:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(237, 32, 36, 0.32);
+}
+
+.hcrc-btn-outline {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.hcrc-btn-outline:hover {
+  background: #ffffff;
+  color: #0b4f9f;
+}
+
+.hcrc-service-info-card {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
+}
+
+.hcrc-service-card-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hcrc-service-info-card h2 {
+  font-size: 28px;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+
+.hcrc-service-info-card p {
+  color: #eaf3ff;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.hcrc-service-body {
+  padding: 80px 0;
+}
+
+.hcrc-service-intro {
+  max-width: 930px;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #4b5563;
+  margin: 0 0 40px;
+}
+
+.hcrc-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.hcrc-service-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 34px;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(11, 79, 159, 0.08);
+}
+
+.hcrc-service-card h2 {
+  margin: 0 0 20px;
+  font-size: 25px;
+  color: #083b78;
+}
+
+.hcrc-service-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hcrc-service-card li {
+  position: relative;
+  padding: 12px 0 12px 28px;
+  color: #374151;
+  line-height: 1.5;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.hcrc-service-card li:last-child {
+  border-bottom: 0;
+}
+
+.hcrc-service-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  color: #ed2024;
+  font-weight: 900;
+}
+
+.hcrc-emergency-strip {
+  padding: 60px 0;
+  background: #fff1f2;
+  text-align: center;
+}
+
+.hcrc-emergency-strip h2 {
+  font-size: 34px;
+  color: #991b1b;
+  margin: 0 0 10px;
+}
+
+.hcrc-emergency-strip p {
+  color: #7f1d1d;
+  margin: 0 0 24px;
+}
+
+.hcrc-final-cta {
+  padding: 70px 0;
+  background: #ffffff;
+  text-align: center;
+}
+
+.hcrc-final-cta h2 {
+  font-size: 36px;
+  color: #083b78;
+  margin: 0 0 12px;
+}
+
+.hcrc-final-cta p {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.hcrc-final-cta .hcrc-btn-primary {
+  background: #0b4f9f;
+  color: #ffffff;
+}
+
+.service-not-found {
+  min-height: 70vh;
+  padding: 150px 30px;
+  text-align: center;
+  background: #f7f9fc;
+}
+
+.service-not-found h1 {
+  color: #083b78;
+  font-size: 42px;
+}
+
+.service-not-found a {
+  display: inline-block;
+  margin-top: 18px;
+  color: #0b4f9f;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .hcrc-service-hero-grid,
+  .hcrc-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hcrc-service-hero {
+    padding: 95px 0 65px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hcrc-service-actions {
+    flex-direction: column;
+  }
+
+  .hcrc-btn {
+    width: 100%;
+  }
+
+  .hcrc-service-card,
+  .hcrc-service-info-card {
+    padding: 26px;
+  }
+}
